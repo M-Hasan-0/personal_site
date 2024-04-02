@@ -19,7 +19,7 @@ section .my-container {
   flex-direction: column;
 }
 
-.hero, .about, .contact {
+.hero, .contact {
   height: 100vh;
 }
 
@@ -76,6 +76,9 @@ section .my-container {
   font-weight: bold;
 }
 
+.about {
+  padding-bottom: 5%;
+}
 .about .section-content li {
   list-style: none;
   padding: 20px 40px;
