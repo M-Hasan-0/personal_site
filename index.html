@@ -100,15 +100,24 @@
         <div class="my-container">
             <h2>Contact</h2>
             <div class="section-content">
-                content
+                <form method="POST" id="form">
+
+                    <input type="hidden" name="access_key" value="d5e47328-0dfe-4f47-8604-6ba0935c4cbb">
+                
+                    <input class="form_input" type="text" name="name" placeholder="Your Name" required>
+                    <input class="form_input" type="email" name="email" placeholder="Your Email" required>
+                    <textarea class="form_input textarea" name="message" placeholder="Message" required></textarea>
+                    <div class="h-captcha" data-captcha="true"></div>
+                
+                    <button type="submit">Submit Form</button>
+                
+                    <div id="result"></div>
+                
+                </form>
             </div>
             
         </div>
-    </section>
-    
-
-
-    
+    </section>    
     <script type="module" src="./app/app.js"></script>
 </body>
 </html>

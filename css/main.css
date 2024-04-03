@@ -88,4 +88,46 @@ section .my-container {
   font-weight: bold;
   text-transform: capitalize;
   margin: 30px 5px;
+}
+
+.contact .section-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact .section-content #form {
+  padding: 30px 40px;
+  background-color: rgba(255, 255, 255, 0.589);
+  border-radius: 10px;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact .section-content #form .form_input {
+  width: 100%;
+  max-width: 600px;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding-left: 20px;
+  margin: 10px;
+}
+.contact .section-content #form .textarea {
+  padding-top: 20px;
+  height: 300px;
+  max-height: 300px;
+}
+.contact .section-content #form button {
+  margin-top: 10px;
+  padding: 20px 40px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+.contact .section-content #form .h-captcha {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */

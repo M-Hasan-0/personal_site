@@ -4,7 +4,8 @@ import {getCities} from "./firebase.js"
 import "https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
 // utility functions
 import { display_cards_html} from "./card.js"
-
+// contact form function
+import {handle_form_submmition} from "./form.js"
 
 const section = document.getElementById("projectsCards");
 let fetched_projects;
@@ -42,3 +43,15 @@ function on_card_click(event){
 
 
 window.onload = display_cards(section);
+
+
+
+// ==========================
+// Contact form
+// ==========================
+const form = document.getElementById('form');
+const result = document.getElementById('result');
+form.addEventListener('submit', handle_form_submmition);
+// ==========================
+// Contact form
+// ==========================
